@@ -11,7 +11,8 @@
 }
 
 *::selection {
-
+  background-color: var(--color-red);
+  color: #fff;
 }
 
 html {
