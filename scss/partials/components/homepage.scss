@@ -17,7 +17,7 @@
       display: flex;
     }
   
-    &__link {
+    &__item {
       @include nav-text;
       transition: color .2s;
   
@@ -59,16 +59,13 @@
     }
   }
 
+  /// BOTTOM NAVIGATION
+
   &__bottom-nav {
     position: absolute;
     bottom: 8rem;
     z-index: 3;
     display: flex;
-    //display: grid;
-    //grid-template-columns: repeat(3, 22rem);
-    //grid-template-rows: auto auto;
-    //grid-column-gap: 5rem;
-    //grid-row-gap: 3rem;
 
     &__link {
       display: flex;
@@ -91,6 +88,11 @@
         color: var(--color-red);
       }
 
+      &:hover > .hover-box {
+        height: 100%;
+        opacity: 1;
+      }
+
       &__text {
         @include nav-text;
         margin-top: 1.6rem;
@@ -98,6 +100,7 @@
       }
 
       &__image-box {
+        display: block;
         @include image-box;
         position: relative;
         margin-top: 1.6rem;
@@ -112,23 +115,30 @@
   }
 }
 
+/// HOVER BOX
+
 .hover-box {
   width: 48rem;
-  border: 1px solid blue;
+  background-color: rgba(255, 255, 255, .75);
+  padding: 1rem;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: all .8s;
+
+  &__item {
+  }
 
   &__link {
     display: flex;
-
+    padding: .4rem 0;
+    
     &:hover {
       cursor: pointer;
     }
 
     &:hover > &__text {
       color: var(--color-red);
-    }
-
-    &:not(:last-of-type) {
-      margin-bottom: .8rem;
     }
 
     &__image-box {
@@ -146,6 +156,7 @@
       line-height: 1.4;
       padding: 0 2rem;
       position: relative;
+      transition: color .2s;
 
       &__model {
         font-size: 1.8rem;
