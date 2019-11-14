@@ -102,7 +102,11 @@
       }
 
       &:nth-of-type(3) &__image {
-        transform: translateY(-53%);
+        transform: translateY(-63%);
+
+        @media only screen and (max-width: 730px) {
+          transform: translateY(-72%);
+        }
       }
 
       &:hover {
@@ -162,6 +166,10 @@
         position: relative;
         width: 100%;
         transform: translateY(-10%);
+
+        @media only screen and (max-width: 730px) {
+          transform: translateY(-31%);
+        }
       }
     }
   }
