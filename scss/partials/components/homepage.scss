@@ -43,6 +43,11 @@
     height: 70vh;
     max-height: 65rem;
     z-index: 1;
+
+    @media only screen and (max-width: 730px) {
+      left: -15rem;
+      height: 60vh;
+    }
   }
 
   &__slogan {
@@ -68,13 +73,32 @@
     z-index: 3;
     display: flex;
 
+    @media only screen and (max-width: 730px) {
+      //flex-direction: column;
+      display: block;
+      position: fixed;
+      bottom: 3rem;
+      width: calc(100% - 6rem);
+    }
+
     &__link {
       display: flex;
       flex-direction: column-reverse;
       width: 22rem;
 
+      @media only screen and (max-width: 730px) {
+        width: 100%;
+        max-width: 45rem;
+        margin: 0 auto;
+        align-items: center;
+      }
+
       &:not(:last-of-type) {
         margin-right: 4rem;
+        
+        @media only screen and (max-width: 730px) {
+          margin-right: auto;
+        }
       }
 
       &:nth-of-type(3) &__image {
@@ -93,29 +117,45 @@
         //height: 100%;  use it if you wish a 'press down' effect
         height: 35rem;
         opacity: 1;
+
+        @media only screen and (max-width: 730px) {
+          @include no-hover;
+        }
       }
 
       &--nawilzacze:hover > .hover-box--nawilzacze {
         height: 28rem;
         opacity: 1;
+
+        @media only screen and (max-width: 730px) {
+          @include no-hover;
+        }
       }
 
       &--inne:hover > .hover-box--inne {
         height: 21rem;
         opacity: 1;
+
+        @media only screen and (max-width: 730px) {
+          @include no-hover;
+        }
       }
 
       &__text {
         @include nav-text;
         margin-top: 1.6rem;
         transition: color .2s;
+
+        @media only screen and (max-width: 730px) {
+          margin-top: .8rem;
+        }
       }
 
       &__image-box {
         display: block;
         @include image-box;
         position: relative;
-        margin-top: 1.6rem;
+        //margin-top: 1.6rem;
       }
 
       &__image {
@@ -140,6 +180,10 @@
   height: 0;
   opacity: 0;
   transition: all .8s;
+
+  @media only screen and (max-width: 730px) {
+    display: none;
+  }
 
   &--inne {
     transform: translateX(-13.5rem);

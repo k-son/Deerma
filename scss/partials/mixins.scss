@@ -2,6 +2,11 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   font-size: 2.4rem;
+  padding-bottom: 1.6rem;
+
+  @media only screen and (max-width: 730px) {
+    padding-bottom: 0;
+  }
 }
 
 @mixin image-box {
@@ -9,4 +14,13 @@
   width: 22rem;
   border-radius: 2px;
   overflow: hidden;
+
+  @media only screen and (max-width: 730px) {
+    width: 100%;
+  }
+}
+
+@mixin no-hover {
+  height: 0;
+  opacity: 0;
 }
