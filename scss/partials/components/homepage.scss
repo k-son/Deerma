@@ -89,9 +89,19 @@
         color: var(--color-red);
       }
 
-      &:hover > .hover-box {
-        height: 35rem;
+      &--odkurzacze:hover > .hover-box--odkurzacze {
         //height: 100%;  use it if you wish a 'press down' effect
+        height: 35rem;
+        opacity: 1;
+      }
+
+      &--nawilzacze:hover > .hover-box--nawilzacze {
+        height: 28rem;
+        opacity: 1;
+      }
+
+      &--inne:hover > .hover-box--inne {
+        height: 21rem;
         opacity: 1;
       }
 
@@ -126,6 +136,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  border-radius: 2px;
   height: 0;
   opacity: 0;
   transition: all .8s;
