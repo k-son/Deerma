@@ -166,7 +166,7 @@
       }
 
       &:nth-of-type(3) &__image {
-        transform: translateY(-63%);
+        transform: translateY(-30%);
 
         @media only screen and (max-width: 730px) {
           transform: translateY(-72%);
@@ -223,7 +223,6 @@
         display: block;
         @include image-box;
         position: relative;
-        //margin-top: 1.6rem;
       }
 
       &__image {
