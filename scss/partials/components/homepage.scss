@@ -242,7 +242,7 @@
 
 .hover-box {
   width: 49rem;
-  background-color: rgba(255, 255, 255, .75);
+  background-color: rgba(255, 255, 255, .85);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -277,9 +277,22 @@
       color: var(--color-red);
     }
 
+    &:hover &__image {
+      transform: scale(1.075);
+    }
+
     &__image-box {
       @include image-box;
       background-color: grey;
+      position: relative;
+    }
+
+    &__image {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 110%;
+      transition: all .3s;
     }
 
     &__text {
