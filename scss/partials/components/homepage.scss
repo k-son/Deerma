@@ -10,8 +10,9 @@
     z-index: 2;
 
     @media only screen and (max-width: 730px) {
-      width: 70%;
-      margin-left: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 12rem;
     }
   
     &__logo img {
@@ -80,6 +81,9 @@
       font-weight: 200;
     }
 
+    @media only screen and (max-height: 500px) {
+      font-size: 4rem;
+    }
     @media only screen and (max-width: 730px) {
       left: 50%;
       top: 18vh;
@@ -304,7 +308,7 @@
       &:after {
         content: "";
         display: block;
-        height: 2px;
+        height: 1px;
         width: 8rem;
         background-color: var(--color-red);
         position: absolute;

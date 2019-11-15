@@ -1,10 +1,12 @@
 @import "partials/destyle";
 @import "partials/base";
-@import "partials/colors";
+@import "partials/variables";
 @import "partials/typography";
 @import "partials/layout";
 @import "partials/mixins";
 
 //components
 @import "partials/components/homepage.scss";
+@import "partials/components/hamburger.scss";
+@import "partials/components/modal-navi.scss";
 @import "partials/components/top-nav.scss";
