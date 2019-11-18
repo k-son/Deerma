@@ -12,7 +12,7 @@
 
 *::selection {
   background-color: var(--color-red);
-  color: #fff;
+  color: var(--color-body);
 }
 
 html {
@@ -32,5 +32,6 @@ html {
 body {
   box-sizing: border-box;
   color: #000;
-  background-color: #fff;
+  color: #3b3b3b;
+  background-color: var(--color-body);
 }
