@@ -1,9 +1,17 @@
 .top-bar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 130rem;
+  height: var(--top-bar-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: var(--top-bar-height);
+  padding: 0 3rem;
+  background-color: rgba(255,255,255,.9);
+  box-shadow: 0 5px 15px -8px rgba(0,0,0,.3);
 
   @media only screen and (max-width: 800px) {
     display: none;
