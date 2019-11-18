@@ -1,0 +1,39 @@
+.polityka-box {
+  margin-top: calc(var(--top-bar-height) + 5rem);
+  display: flex;
+  justify-content: space-between;
+
+  &__image-box {
+    @include image-box--2;
+  }
+
+  &__image {
+    
+  }
+}
+
+.policy {
+  min-width: 26rem;
+  max-width: 100%;
+  margin-bottom: 5rem;
+
+  &__h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+
+  &__list {
+    font-size: 1.8rem;
+    font-weight: 200;
+
+    &:not(:last-of-type) {
+      margin-bottom: 4rem;
+    }
+
+    &__item {
+
+    }
+  }
+
+}

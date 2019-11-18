@@ -27,6 +27,16 @@
   }
 }
 
+@mixin image-box--2 {
+  display: block;
+  height: 60rem;
+  width: 20rem;
+  border-radius: 2px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: 5rem;
+}
+
 @mixin no-hover {
   height: 0;
   opacity: 0;
