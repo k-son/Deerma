@@ -16,10 +16,12 @@
 .container {
 
   &--polityka,
-  &--gdziekupic {
+  &--gdziekupic,
+  &--onas {
     max-width: 130rem;
     margin: 0 auto;
     padding: 1rem 3rem;
+    margin-bottom: 5rem;
 
     @media only screen and (min-width: 1100px) {
       padding: 1rem 6vw;

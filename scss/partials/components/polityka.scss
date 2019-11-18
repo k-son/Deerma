@@ -20,6 +20,10 @@
   &__h2 {
     font-size: 2.4rem;
     margin-bottom: 2rem;
+
+    &:first-of-type {
+      @include margin-top-medium;
+    }
   }
 
   &__list {

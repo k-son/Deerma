@@ -14,6 +14,7 @@
   font-weight: 400;
   font-size: 2rem;
   line-height: 1.2;
+  letter-spacing: -1px;
 }
 
 @mixin image-box {
@@ -59,8 +60,10 @@
 }
 
 @mixin h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 3.2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1.6rem;
   line-height: 1.2;
   font-style: italic;
 }
@@ -68,4 +71,8 @@
 @mixin no-hover {
   height: 0;
   opacity: 0;
+}
+
+@mixin margin-top-medium {
+  margin-top: 5rem;
 }
