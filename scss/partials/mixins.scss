@@ -9,6 +9,13 @@
   }
 }
 
+@mixin top-bar-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
 @mixin image-box {
   height: 6rem;
   width: 22rem;

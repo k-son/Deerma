@@ -10,4 +10,14 @@
   @media only screen and (max-width: 730px) {
    padding: var(--padding-home-mobile);   
   }
+}   
+
+/// pages top-level containers
+.container {
+
+  &--polityka {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+  }
 }
