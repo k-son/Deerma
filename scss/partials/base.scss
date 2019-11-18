@@ -31,6 +31,7 @@ html {
 
 body {
   box-sizing: border-box;
-  color: #444;
+  font-family: 'Lora', serif;
+  color: var(--color-text);
   background-color: var(--color-body);
 }

@@ -27,6 +27,23 @@
   }
 }
 
+@mixin page-box {
+  margin-top: calc(var(--top-bar-height) + 5rem);
+  display: flex;
+  justify-content: flex-start;
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+@mixin page {
+  min-width: 26rem;
+  max-width: 100%;
+  margin-bottom: 5rem;
+  padding: 0 3rem;
+}
+
 @mixin image-box--2 {
   display: block;
   height: 60rem;
@@ -39,6 +56,13 @@
   @media only screen and (max-width: 800px) {
     display: none;
   }
+}
+
+@mixin h1 {
+  font-size: 3.2rem;
+  margin-bottom: 5rem;
+  line-height: 1.2;
+  font-style: italic;
 }
 
 @mixin no-hover {

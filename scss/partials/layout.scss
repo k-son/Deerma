@@ -15,7 +15,8 @@
 /// pages top-level containers
 .container {
 
-  &--polityka {
+  &--polityka,
+  &--gdziekupic {
     max-width: 130rem;
     margin: 0 auto;
     padding: 1rem 3rem;
