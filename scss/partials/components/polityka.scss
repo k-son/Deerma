@@ -23,10 +23,7 @@
   padding: 0 3rem;
 
   &__h1 {
-    font-size: 3.2rem;
-    margin-bottom: 5rem;
-    line-height: 1.2;
-    font-style: italic;
+    @include h1;
   }
 
   &__h2 {
