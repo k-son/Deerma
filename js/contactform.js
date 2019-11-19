@@ -1,4 +1,4 @@
-d{
+{
     const form = document.querySelector('#contactForm');
     const inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
 
