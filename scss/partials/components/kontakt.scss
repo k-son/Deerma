@@ -1,0 +1,23 @@
+.kontakt-box {
+  @include page-box;
+
+  &__image-box {
+    @include image-box--2;
+    background: url(../img/kontakt.jpg);
+    background-size: cover;
+  }
+}
+
+.form {
+  @include margin-top-medium;
+  
+  &__polityka-prywatnosci {
+    line-height: 3.2;
+    padding: .2rem 0;
+    border-bottom: 1px solid;
+
+    &:hover {
+      border-bottom: 1px solid var(--color-red);
+    }
+  }
+}

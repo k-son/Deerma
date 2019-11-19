@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="descripiton" content="Deerma Polska, formularz kontaktowy.">
+  <meta name="robots" content="index, follow" />
+  <!-- favicons -->
+
+  <title>Formularz kontaktowy</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:100,200,300,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/contactform.css">
+  <link rel="stylesheet" href="css/main.min.css">
+  <script src="./js/script.js" defer></script>
+</head>
+<body>
+  <!-- TOP BAR NAVIGATION -->
+    <div class="top-bar">
+      <a href="index.html" class="top-bar__home-link"><img src="img/logo.svg" alt="Deerma logo" class="top-bar__logo"></a>
+      <nav class="top-bar__nav--left">
+        <ul class="top-bar__nav--left__list">
+          <li class="top-bar__nav--left__list__item">
+            <a href="odkurzacze.html" class="top-bar__nav--left__list__item__link">odkurzacze</a>
+          </li>
+          <li class="top-bar__nav--left__list__item">
+            <a href="nawilzacze.html" class="top-bar__nav--left__list__item__link">nawilżacze</a>
+          </li>
+          <li class="top-bar__nav--left__list__item">
+            <a href="inneurzadzenia.html" class="top-bar__nav--left__list__item__link">inne urządzenia</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="top-bar__nav--right">
+        <ul class="top-bar__nav--right__list">
+          <li class="top-bar__nav--right__list__item">
+            <a href="onas.html" class="top-bar__nav--right__list__item__link">o nas</a>
+          </li>
+          <li class="top-bar__nav--right__list__item">
+            <a href="gdziekupic.html" class="top-bar__nav--right__list__item__link">gdzie kupić?</a>
+          </li>
+          <li class="top-bar__nav--right__list__item">
+            <a href="kontakt.html" class="top-bar__nav--right__list__item__link faded-link">kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- HAMBURGER -->
+    <button class="hamburger">
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>                                               
+      </button>
+  
+    <!-- MODAL NAVI -->
+    <div class="modal hide">
+      <nav class="modal__navi">
+        <ul class="modal__navi__list">
+          <li class="modal__navi__list__item">
+            <a href="index.html" class="modal__navi__list__item__link">home</a>
+          </li>
+          <li class="modal__navi__list__item">
+            <a href="odkurzacze.html" class="modal__navi__list__item__link">odkurzacze</a>
+          </li>
+          <li class="modal__navi__list__item">
+            <a href="nawilzacze.html" class="modal__navi__list__item__link">nawilżacze</a>
+          </li>
+          <li class="modal__navi__list__item">
+            <a href="inneurzadzenia.html" class="modal__navi__list__item__link">inne urządzenia</a>
+          </li>
+          <li class="modal__navi__list__item">
+            <a href="onas.html" class="modal__navi__list__item__link">o nas</a>
+          </li>
+          <li class="modal__navi__list__item">
+            <a href="gdziekupic.html" class="modal__navi__list__item__link">gdzie kupić?</a>
+          </li>
+          <li class="modal__navi__list__item">
+            <a href="kontakt.html" class="modal__navi__list__item__link">kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container--kontakt">
+      <div class="kontakt-box">
+        <div class="kontakt-box__image-box"></div>
+        <main>
+          <h1 class="onas__h1">Formularz kontaktowy</h1>
+          <div class="decorative-rectangle"></div>
+          <!-- FORMULARZ KONTAKTOWY -->
+            <form class="form" id="contactForm" method="post" novalidate action="send-script.php">
+              <div class="form-row">
+                  <label for="field-name">Imię</label>
+                  <input type="text" name="name" required id="field-name" data-error="Napisz jak się nazywasz" pattern="[a-zA-ZąĄććĆęęłŁńŃóÓśŚżŻŹŹźŹ ]+">
+              </div>
+              <div class="form-row">
+                  <label for="field-email">E-mail</label>
+                  <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+              </div>
+              <div class="form-row">
+                  <label for="field-message">Wiadomość</label>
+                  <textarea name="message" required data-error="Napisz wiadomość" id="field-message"  pattern=".+"></textarea>
+              </div>
+              <!-- honeypot start -->
+              <span class="form-row honey-row" style="display: none;">
+                  <label for="a_password">Jeżeli jesteś człowiekiem, nie wypełniaj tego pola</label>
+                  <input id="a_password" type="text" name="a_password" tabindex="-1" autocomplete="off">
+              </span>
+              <!-- honeypot end -->
+              <div class="form-row">
+                  <label class="checkbox-cnt">
+                      <input type="checkbox" required data-error="Musisz zaakceptować politykę prywatności" name="regulation">
+                      <i class="state" aria-hidden="true"></i>
+                      <span>Akceptuję politykę prywatności.</span><br>
+                      <a href="polityka.html" class="form__polityka-prywatnosci">Zapoznaj się z polityką prywatności.</a>
+                  </label>
+              </div>
+              <div class="form-row">
+                  <button type="submit" class="submit-btn">
+                      Wyślij
+                  </button>
+              </div>
+            </form>
+            <script src="js/contactform.js"></script>
+          </main>
+        </div>
+      </div>
+</body>
+</html>
