@@ -19,7 +19,7 @@
 
     &__span {
       display: block;
-      font-weight: 300;
+      font-weight: 200;
       margin-left: 6rem;
     }
   }
@@ -28,10 +28,11 @@
     @include margin-top-medium;
 
     &__para {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
+      line-height: 1.4;
 
       &:not(:last-of-type) {
-        margin-bottom: 2rem;
+        margin-bottom: .8rem;
       }
     }
   }
