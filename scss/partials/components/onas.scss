@@ -28,8 +28,7 @@
     @include margin-top-medium;
 
     &__para {
-      font-size: 1.6rem;
-      line-height: 1.4;
+      @include text-format;
 
       &:not(:last-of-type) {
         margin-bottom: .8rem;

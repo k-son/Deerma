@@ -7,7 +7,7 @@
   max-width: 130rem;
   height: var(--top-bar-height);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
   padding: 2rem 3rem 2rem 3rem;
   color: var(--color-deerma-grey);
@@ -36,7 +36,15 @@
     }
   }
 
+  &__navigations {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__nav--left {
+    margin-left: calc(var(--margin) + 2rem);
+
     @media only screen and (max-width: 800px) {
       display: none;
     }
@@ -64,6 +72,7 @@
   }
 
   &__nav--right {
+
     @media only screen and (max-width: 800px) {
       display: none;
     }

@@ -2,11 +2,18 @@
     box-sizing: border-box;
 }
 .form {
-    margin: 0 auto 4rem auto;
+    margin: 0 0 4rem;
     font-family: 'Lora', serif;
     width: 90%;
     max-width:80rem;
 }
+
+@media only screen and (max-width: 800px) {
+    .form {
+        margin: 0 auto 4rem;
+    }
+}
+
 .form .form-row {
     margin-bottom:1rem;
 }

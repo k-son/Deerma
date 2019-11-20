@@ -52,7 +52,7 @@
   border-radius: 2px;
   overflow: hidden;
   flex-shrink: 0;
-  margin-right: 5rem;
+  margin-right: var(--margin);
 
   @media only screen and (max-width: 800px) {
     display: none;
@@ -67,6 +67,11 @@
   line-height: 1.2;
   letter-spacing: -.5px;
   font-style: italic;
+}
+
+@mixin text-format {
+  font-size: 1.6rem;
+  line-height: 1.4;
 }
 
 @mixin no-hover {
