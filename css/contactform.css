@@ -88,8 +88,15 @@
     outline:none;
 }
 .form textarea {
-    height:10rem;
+    height:20rem;
 }
+
+@media only screen and (max-width: 800px) {
+    .form textarea {
+        height:10rem;
+    }
+}
+
 .form label {
     font-weight:bold;
     display: block;
