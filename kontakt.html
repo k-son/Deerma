@@ -87,18 +87,22 @@
     <div class="container--kontakt">
       <div class="kontakt-box">
         <div class="kontakt-box__image-box"></div>
-        <main>
+        <main class="kontakt-box__content">
           <h1 class="onas__h1">Formularz kontaktowy</h1>
           <div class="decorative-bar"></div>
           <!-- FORMULARZ KONTAKTOWY -->
             <form class="form" id="contactForm" method="post" novalidate action="send-script.php">
-              <div class="form-row">
+              <div class="form-row" id="first-row">
+                <div class="">
                   <label for="field-name">Imię</label>
                   <input type="text" name="name" required id="field-name" data-error="Napisz jak się nazywasz" pattern="[a-zA-ZąĄććĆęęłŁńŃóÓśŚżŻŹŹźŹ ]+">
-              </div>
-              <div class="form-row">
+                </div>
+                <div class="">
                   <label for="field-email">E-mail</label>
                   <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                </div>
+              </div>
+              <div class="form-row">
               </div>
               <div class="form-row">
                   <label for="field-message">Wiadomość</label>
@@ -114,8 +118,8 @@
                   <label class="checkbox-cnt">
                       <input type="checkbox" required data-error="Musisz zaakceptować politykę prywatności" name="regulation">
                       <i class="state" aria-hidden="true"></i>
-                      <span>Akceptuję politykę prywatności.</span><br>
-                      <a href="polityka.html" class="form__polityka-prywatnosci">Zapoznaj się z polityką prywatności.</a>
+                      <span>akceptuję</span>
+                      <a href="polityka.html" class="form__polityka-prywatnosci">politykę prywatności</a>
                   </label>
               </div>
               <div class="form-row">
