@@ -1,0 +1,12 @@
+.odkurzacze-box {
+  @include page-box--2;
+
+  &__image-box {
+    @include image-box--3;
+    background-image: url(../img/odkurzacze/cm180.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  @include item-list;
+}

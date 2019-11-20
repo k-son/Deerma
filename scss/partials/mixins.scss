@@ -32,10 +32,17 @@
   margin-top: calc(var(--top-bar-height) + 5rem);
   display: flex;
   justify-content: flex-start;
+  flex-wrap: nowrap;
 
   @media only screen and (max-width: 800px) {
     flex-direction: column;
   }
+}
+
+@mixin page-box--2 {
+  margin-top: calc(var(--top-bar-height) + 5rem);
+  display: flex;
+  flex-direction: column;
 }
 
 @mixin page {
@@ -56,6 +63,76 @@
 
   @media only screen and (max-width: 800px) {
     display: none;
+  }
+}
+
+@mixin image-box--3 {
+  display: block;
+  height: 30rem;
+  width: 14rem;
+  border-radius: 2px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: var(--margin);
+
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
+@mixin item-list {
+  &__item-box {
+    display: flex;
+
+    &:not(:last-of-type) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-end;
+
+    @media only screen and (max-width: 600px) {
+      align-items: center;
+    }
+  }
+
+  &__image {
+    height: 28rem;
+
+    @media only screen and (max-width: 600px) {
+      height: 25vw;
+    }
+  }
+
+  &__description {
+    margin-right: 3rem;
+    margin-bottom: 5rem;
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__caption {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: 420px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+    @media only screen and (max-width: 420px) {
+      font-size: 1.4rem;
+    }
   }
 }
 
