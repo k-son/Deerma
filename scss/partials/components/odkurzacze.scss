@@ -10,3 +10,10 @@
 
   @include item-list;
 }
+
+.odkurzacze-box__image {
+  background-image: url(../../../img/odkurzacze/VC40.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
