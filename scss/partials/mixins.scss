@@ -35,7 +35,6 @@
 
   @media only screen and (max-width: 800px) {
     flex-direction: column;
-    margin-top: calc(var(--top-bar-height) + 2rem);
   }
 }
 
@@ -49,7 +48,7 @@
 @mixin image-box--2 {
   display: block;
   height: 60rem;
-  width: 20rem;
+  width: 16.5rem;
   border-radius: 2px;
   overflow: hidden;
   flex-shrink: 0;

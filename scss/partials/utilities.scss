@@ -2,10 +2,17 @@
   color: var(--color-faded-link);
 }
 
-.decorative-rectangle {
-  width: 45%;
-  height: .3rem;
-  clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
-  border-radius: 2px;
-  background: linear-gradient( to right, var(--color-red) 0%, var(--color-red) 66%, var(--color-body) 100% );
+.decorative-bar {
+  width: 50%;
+  height: 1px;
+  transform: translateX(-5rem);
+  background:  var(--color-red);
+
+  @media only screen and (min-width: 1100px) {
+    transform: translateX(-7rem);
+  }
+  @media only screen and (max-width: 800px) {
+    transform: translateX(-3rem);
+  }
+
 }
