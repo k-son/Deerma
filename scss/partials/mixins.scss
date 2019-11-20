@@ -107,6 +107,15 @@
       position: absolute;
       bottom: -.4rem;
       left: 20rem;
+
+      @media only screen and (max-width: 600px) {
+        left: 10rem;
+        bottom: -4px;
+      }
+      @media only screen and (max-width: 450px) {
+        left: 8rem;
+        bottom: -8px;
+      }
     }
   }
 
