@@ -1,5 +1,6 @@
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .form {
     margin: 0 0 4rem;
@@ -25,7 +26,8 @@
 .form input[type=tel],
 .form textarea,
 .form .checkbox-cnt .state {
-    box-shadow:inset 0 1px 5px rgba(0,0,0,0.07);
+    -webkit-box-shadow:inset 0 1px 5px rgba(0,0,0,0.07);
+            box-shadow:inset 0 1px 5px rgba(0,0,0,0.07);
 }
 .form input[type=text],
 .form input[type=email],
@@ -42,9 +44,14 @@
 }
 
 #first-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
@@ -55,7 +62,10 @@
 @media only screen and (max-width: 800px) {
     
     #first-row {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         margin-bottom: 0;
     }
 
@@ -73,7 +83,8 @@
 .form input[type=tel]:focus,
 .form textarea:focus {
     border-color:#9DC9F5;
-    box-shadow:inset 0 0 0 1px #9DC9F5, inset 0 1px 5px rgba(0,0,0,0.07);
+    -webkit-box-shadow:inset 0 0 0 1px #9DC9F5, inset 0 1px 5px rgba(0,0,0,0.07);
+            box-shadow:inset 0 0 0 1px #9DC9F5, inset 0 1px 5px rgba(0,0,0,0.07);
     outline:none;
 }
 .form textarea {
@@ -148,7 +159,8 @@
     left:50%;
     top:50%;
     content:'';
-    transform:translate(-50%, -50%) scale(1);
+    -webkit-transform:translate(-50%, -50%) scale(1);
+            transform:translate(-50%, -50%) scale(1);
     opacity:0;
 }
 
@@ -176,7 +188,8 @@
 }
 
 .form .checkbox-cnt input:checked ~ .state:before {
-    animation: checkboxShowAnim 0.5s 1;
+    -webkit-animation: checkboxShowAnim 0.5s 1;
+            animation: checkboxShowAnim 0.5s 1;
     opacity: 1;
 }
 .form .checkbox-cnt input {
@@ -204,10 +217,15 @@
     width: 100%;
     min-width: 26rem;
 }
+@-webkit-keyframes checkboxShowAnim {
+    0%  { border-radius:50%; -webkit-transform:translate(-50%, -50%) scale(0.2); transform:translate(-50%, -50%) scale(0.2); }
+    50% { -webkit-transform:translate(-50%, -50%) scale(1.2); transform:translate(-50%, -50%) scale(1.2); }
+    100% { -webkit-transform:translate(-50%, -50%) scale(1); transform:translate(-50%, -50%) scale(1); }
+}
 @keyframes checkboxShowAnim {
-    0%  { border-radius:50%; transform:translate(-50%, -50%) scale(0.2); }
-    50% { transform:translate(-50%, -50%) scale(1.2); }
-    100% { transform:translate(-50%, -50%) scale(1); }
+    0%  { border-radius:50%; -webkit-transform:translate(-50%, -50%) scale(0.2); transform:translate(-50%, -50%) scale(0.2); }
+    50% { -webkit-transform:translate(-50%, -50%) scale(1.2); transform:translate(-50%, -50%) scale(1.2); }
+    100% { -webkit-transform:translate(-50%, -50%) scale(1); transform:translate(-50%, -50%) scale(1); }
 }
 
 .element-is-busy {
@@ -224,17 +242,31 @@
     border-radius: 50%;
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-right-color: rgba(0,0,0,0.7);
-    transform: translate(-50%, -50%) rotate(0deg);
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
     content:'';
-    animation: rotateSingleLoading 0.3s infinite linear;
+    -webkit-animation: rotateSingleLoading 0.3s infinite linear;
+            animation: rotateSingleLoading 0.3s infinite linear;
     z-index: 100;
+}
+@-webkit-keyframes rotateSingleLoading {
+    from {
+        -webkit-transform: translate(-50%, -50%) rotate(0deg);
+                transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+                transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
 @keyframes rotateSingleLoading {
     from {
-        transform: translate(-50%, -50%) rotate(0deg);
+        -webkit-transform: translate(-50%, -50%) rotate(0deg);
+                transform: translate(-50%, -50%) rotate(0deg);
     }
     to {
-        transform: translate(-50%, -50%) rotate(360deg);
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+                transform: translate(-50%, -50%) rotate(360deg);
     }
 }
 .form .send-error {
