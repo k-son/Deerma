@@ -92,9 +92,21 @@
   &__item {
     display: flex;
     align-items: flex-end;
+    position: relative;
 
     @media only screen and (max-width: 600px) {
       align-items: center;
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      width: 16rem;
+      height: 1px;
+      background-color: var(--color-red);
+      position: absolute;
+      bottom: -.4rem;
+      left: 20rem;
     }
   }
 
