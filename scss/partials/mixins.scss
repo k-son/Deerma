@@ -104,7 +104,8 @@
       cursor: pointer;
     }
 
-    &:hover > .odkurzacze-box__item::after {
+    &:hover > .odkurzacze-box__item::after,
+    &:hover > .nawilzacze-box__item::after, {
       width: 30rem;
       width: 60%;
     }
