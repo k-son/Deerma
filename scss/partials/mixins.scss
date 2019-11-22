@@ -98,6 +98,18 @@
     }
   }
 
+  &__link {
+  
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover > .odkurzacze-box__item::after {
+      width: 30rem;
+      width: 60%;
+    }
+  }
+
   &__item {
     display: flex;
     align-items: flex-end;
@@ -116,6 +128,7 @@
       position: absolute;
       bottom: -.4rem;
       left: 15rem;
+      transition: width .3s;
 
       @media only screen and (max-width: 600px) {
         left: 10rem;
