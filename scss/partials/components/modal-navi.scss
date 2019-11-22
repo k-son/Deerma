@@ -28,6 +28,10 @@
         &:nth-of-type(4) {
           margin-bottom: 3.2rem;
         }
+
+        &:first-of-type &__link {
+          background-color: transparent;
+        }
         
         &__link {
           display: block;
@@ -45,6 +49,10 @@
 
           &:active {
             color: var(--color-red);
+          }
+
+          &__logo {
+            height: 4rem;
           }
         }
       }
