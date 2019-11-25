@@ -7,7 +7,7 @@
     grid-template-rows: 20rem auto auto;
     grid-column-gap: 1%;
     margin-top: calc(var(--top-bar-height) + 5rem);
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     overflow: hidden;
 
     @media only screen and (max-width: 800px) {
@@ -183,11 +183,12 @@
 
   &__table {
     width: 100%;
-    margin: 6rem 0;
+    margin: 8rem 0 5rem 0;
     border-collapse: separate;
     border-spacing: 4rem 1.6rem;
 
     @media only screen and (max-width: 600px) {
+      margin: 5rem 0 4rem 0;
       border-spacing: 2rem 1.6rem;
     }
 
