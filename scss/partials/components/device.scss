@@ -26,7 +26,9 @@
     justify-self: center;
     align-self: center;
     width: 100%;
-    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 
     &:hover {
       cursor: pointer;
@@ -41,7 +43,6 @@
   &__img {
     width: auto;
     max-height: 40rem;
-    margin-right: 2rem;
 
     @media only screen and (max-width: 800px) {
       height: 35vw;
