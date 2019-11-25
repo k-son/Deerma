@@ -65,6 +65,10 @@
     @media only screen and (max-height: 620px) {
       height: 46vh;
     }
+
+    @media only screen and (max-width: 730px) and (orientation: landscape) {
+      display: none;
+    }
   }
 
   &__slogan {
@@ -100,6 +104,10 @@
     @media only screen and (max-width: 400px) {
       font-size: 3.4rem;
       top: 17vh;
+    }
+
+    @media only screen and (max-width: 730px) and (orientation: landscape) {
+      display: none;
     }
   }
 
