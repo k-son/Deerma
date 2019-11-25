@@ -20,23 +20,31 @@
     }
   }
 
-  &__img {
+  &__img-link {
     grid-column: 1 / 2;
     grid-row: 1 / 4;
     justify-self: center;
     align-self: center;
-    width: auto;
-    max-height: 40rem;
-    margin-right: 2rem;
-
+    width: 100%;
+    margin-left: 2rem;
+    
     &:hover {
       cursor: pointer;
     }
 
     @media only screen and (max-width: 800px) {
       grid-row: 1 / 2; 
-      height: 30vw;
       margin-bottom: 5.4rem;
+    }
+  }
+
+  &__img {
+    width: auto;
+    max-height: 40rem;
+    margin-right: 2rem;
+
+    @media only screen and (max-width: 800px) {
+      height: 35vw;
     }
 
     @media only screen and (max-width: 450px) {
@@ -146,16 +154,25 @@
     margin-top: 4rem;
     margin-bottom: 4rem;
 
+    @media only screen and (max-width: 350px) {
+      flex-direction: column;
+      align-content: center;
+    }
+
+    &__link {
+      margin: 1.2rem 0 1.2rem 0;
+  
+      &:not(:last-of-type) {
+        margin-right: 2.4rem;
+      }
+
+    }
+
     &__img {
       width: 21vw;
       max-width: 35rem;
       min-width: 16rem;
       height: auto;
-      margin: 1.2rem 0 1.2rem 0;
-
-      &:not(:last-of-type) {
-        margin-right: 2.4rem;
-      }
 
       &:hover {
         cursor: pointer;
