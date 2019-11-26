@@ -56,10 +56,16 @@
     &--tj200,
     &--zq600,
     &--hs007 {
-      display: block;
-      max-width: 100%;
-      width: 100%;
-      //height: auto;
+      width: auto;
+      max-height: 22rem;
+
+      @media only screen and (max-width: 800px) {
+        max-height: 20vw;
+      }
+  
+      @media only screen and (max-width: 450px) {
+        max-height: 24vw;
+      }
     }
   }
 
