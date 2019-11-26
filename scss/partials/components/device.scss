@@ -51,6 +51,11 @@
     @media only screen and (max-width: 450px) {
       height: 40vw;
     }
+
+    &--cm800 {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__caption {
@@ -178,6 +183,20 @@
       &:hover {
         cursor: pointer;
       } 
+    }
+  }
+
+  &__list {
+
+    &--bullets {
+      list-style-type: disc;
+      list-style-position: inside;
+      margin-bottom: 2rem;
+    }
+
+    &__item {
+      font-size: 1.6rem;
+      line-height: 1.4;
     }
   }
 
