@@ -113,14 +113,14 @@
               <!-- honeypot start -->
               <span class="form-row honey-row" style="display: none;">
                   <label for="a_password">Jeżeli jesteś człowiekiem, nie wypełniaj tego pola</label>
-                  <input id="a_password" type="text" name="a_password" tabindex="-1" autocomplete="off">
+                  <input id="a_password" type="text" name="a_password" autocomplete="off" tabindex="-1">
               </span>
               <!-- honeypot end -->
               <div class="form-row">
                   <label class="checkbox-cnt">
-                      <input type="checkbox" required data-error="Musisz zaakceptować politykę prywatności" name="regulation">
-                      <i class="state" aria-hidden="true"></i>
-                      <span>akceptuję</span>
+                      <input type="checkbox" required data-error="Musisz zaakceptować politykę prywatności" name="regulation" tabindex="-1">
+                      <i class="state" tabindex="-1"></i>
+                      <span tabindex="0">akceptuję</span>
                       <a href="polityka.html" class="form__polityka-prywatnosci">politykę prywatności</a>
                   </label>
               </div>
