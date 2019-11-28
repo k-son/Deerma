@@ -10,3 +10,15 @@ function showModal() {
 
 hamburger.addEventListener('click', showModal);
 links.forEach(el => el.addEventListener('click', showModal))
+
+
+/// Accept privacy policy with 'enter' key
+const akceptacja = document.getElementById('akceptacja');
+
+function accept(e) {
+  if (e.keyCode == 13) {
+    akceptacja.click();
+  }
+}
+
+akceptacja.addEventListener('keydown', accept);
