@@ -10,7 +10,7 @@
 
 .odkurzacze-box__item-box {
 
-  &:nth-of-type(1) {
+  &--vc40 {
 
     & .odkurzacze-box__image-box {
       background-image: url(../img/odkurzacze/07.jpg);
@@ -26,7 +26,7 @@
     }
   }
 
-  &:nth-of-type(2) {
+  &--vc20 {
 
     & .odkurzacze-box__image-box {
       background-image: url(../img/odkurzacze/VC20_LS02.jpg);
@@ -42,7 +42,7 @@
     }
   }
 
-  &:nth-of-type(3) {
+  &--cm810 {
 
     & .odkurzacze-box__image-box {
       background-image: url(../img/odkurzacze/cm180.jpg);
@@ -58,7 +58,7 @@
     }
   }
 
-  &:nth-of-type(4) {
+  &--tj200 {
 
     & .odkurzacze-box__image-box {
       background-image: url(../img/odkurzacze/TJ200_03_LS.jpg);
@@ -74,7 +74,7 @@
     }
   }
 
-  &:nth-of-type(5) {
+  &--dx700 {
 
     & .odkurzacze-box__image-box {
       background-image: url(../img/odkurzacze/DX700girl.jpg);
