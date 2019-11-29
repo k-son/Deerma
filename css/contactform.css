@@ -4,7 +4,7 @@
 }
 .form {
     margin: 0 0 4rem;
-    font-family: 'Lora', serif;
+    font-family: 'Raleway', sans-serif;
     width: 90%;
     max-width:80rem;
 }
@@ -34,7 +34,7 @@
 .form input[type=tel],
 .form textarea {
     border-radius:0.2rem;
-    font-family: 'Lora', serif;
+    font-family: 'Raleway', sans-serif;
     padding:8px;
     border:1px solid #aaa;
     display: inline-block;
@@ -278,13 +278,13 @@
 }
 .form .send-error {
     display:inline-block;
-    font-family: 'Lora', serif;
+    font-family: 'Raleway', sans-serif;
     font-size:9px;
     padding:1rem 1.5rem;
     color:#ff0029;
 }
 .form-send-success {
-    font-family: 'Lora', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
     //font-weight:bold;
     //border:1px solid #eee;
