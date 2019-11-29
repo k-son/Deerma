@@ -53,7 +53,7 @@
   &__brush {
     position: absolute;
     top: 0;
-    left: 11rem;
+    left: 13rem;
     height: 70vh;
     max-height: 65rem;
     z-index: 1;
@@ -135,11 +135,12 @@
   &__bottom-nav {
     position: absolute;
     bottom: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 3;
     display: flex;
 
     @media only screen and (max-width: 730px) {
-      //flex-direction: column;
       display: block;
       position: fixed;
       bottom: 4rem;
@@ -210,7 +211,7 @@
 
       &--odkurzacze:hover > .hover-box--odkurzacze {
         //height: 100%;  use it if you wish a 'press down' effect
-        height: 35rem;
+        height: 30rem;
         opacity: 1;
 
         @media only screen and (max-width: 730px) {
@@ -219,7 +220,7 @@
       }
 
       &--nawilzacze:hover > .hover-box--nawilzacze {
-        height: 28rem;
+        height: 7.5rem;
         opacity: 1;
 
         @media only screen and (max-width: 730px) {
@@ -228,7 +229,7 @@
       }
 
       &--inne:hover > .hover-box--inne {
-        height: 21rem;
+        height: 15rem;
         opacity: 1;
 
         @media only screen and (max-width: 730px) {
@@ -269,6 +270,7 @@
 
 .hover-box {
   width: 49rem;
+  border: 1px solid blue;
   background-color: rgba(255, 255, 255, .85);
   overflow: hidden;
   display: flex;
@@ -283,9 +285,13 @@
     display: none;
   }
 
+  &--odkurzacze {
+    width: 51rem; // increase it if descriptions doesnt have enought space
+  }
+
   &--inne {
-    transform: translateX(-13.5rem);
-    width: 37rem;  // increase it if descriptions doesnt have enought space
+    transform: translateX(-16.5rem);
+    width: 43rem;  // increase it if descriptions doesnt have enought space
   }
 
   &__item {
