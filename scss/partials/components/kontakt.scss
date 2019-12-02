@@ -3,6 +3,7 @@
 
   &__image-box {
     @include image-box--2;
+    height: 62rem;
     background: url(../img/kontakt.jpg);
     background-size: cover;
   }
@@ -31,7 +32,7 @@
   font-size: 1.6rem;
   line-height: .6;
   border-collapse: separate;
-  border-spacing: 2rem;
+  border-spacing: 1.6rem;
   transform: translateX(-2rem);
 
   @media only screen and (max-width: 1050px) {
