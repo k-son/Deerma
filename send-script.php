@@ -26,7 +26,7 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	if ( empty( $regulation ) ) {
 		array_push( $errors, 'regulation' );
 	}
-	if ( empty( !$antiSpam ) ) {
+	if ( empty( $antiSpam ) ) {
 		array_push( $errors, 'regulation' );
 	}
 
