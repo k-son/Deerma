@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 
-$mailToSend = 'kontakt@deerma.com.pl';
+$mailToSend = 'kson.eu@gmail.com';
 
 if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	$name       = $_POST['name'];
@@ -24,6 +24,11 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	if ( empty( $regulation ) ) {
 		array_push( $errors, 'regulation' );
 	}
+	/* fragment sprawia problem, bez niego działa
+	if ( empty( !$antiSpam ) ) {
+		array_push( $errors, 'regulation' );
+	}
+	*/
 
 	if ( count( $errors ) > 0 ) {
 		$return['errors'] = $errors;
