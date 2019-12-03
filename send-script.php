@@ -6,10 +6,8 @@ $mailToSend = 'kontakt@deerma.com.pl';
 if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	$name       = $_POST['name'];
 	$email      = $_POST['email'];
-	$phone      = $_POST['phone'];
-	$subject		= $_POST['subject'];
 	$message    = $_POST['message'];
-	$antiSpam = $_POST['a_password'];
+	$antiSpam = $_POST['honey'];
 	$regulation = $_POST['regulation'];
 	$errors     = Array();
 	$return     = Array();
@@ -24,9 +22,6 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 		array_push( $errors, 'message' );
 	}
 	if ( empty( $regulation ) ) {
-		array_push( $errors, 'regulation' );
-	}
-	if ( empty( $antiSpam ) ) {
 		array_push( $errors, 'regulation' );
 	}
 
@@ -44,19 +39,19 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 			</head>
 			<style type='text/css'>
 				body {font-family:sans-serif; color:#222; padding:20px;}
-				div {margin-bottom:20px;}
+				div {margin-bottom:10px;}
 				.msg-title {margin-top:30px;}
 			</style>
 			<body>
 			<div>Imię: <strong>$name</strong></div>
 			<div>Email: <a href=\"mailto:$email\">$email</a></div>
+			<div>Temat: <strong>$subject</strong></div>
 			<div class=\"msg-title\"> <strong>Wiadomość:</strong></div>
 			<div>$message</div>
 			</body>
 			</html>";
 
-
-		 if ( mail( $mailToSend, 'Wiadomość z formularza DEERMA - ' . date( "d-m-Y" ), $message, $headers ) ) {
+		if ( mail( $mailToSend, 'Wiadomość z formularza Roborock - ' . date( "d-m-Y" ), $message, $headers ) ) {
 			$return['status'] = 'ok';
 		} else {
 			$return['status'] = 'error';
