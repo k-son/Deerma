@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: 
+
+Sitemap: https://deerma.com.pl/sitemap.xml
+
