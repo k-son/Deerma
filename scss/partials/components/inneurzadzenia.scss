@@ -57,4 +57,20 @@
       background-position: bottom;
     }
   }
+
+  &--mq813 {
+
+    & .inneurzadzenia-box__image-box {
+      background-image: url(../img/inneurzadzenia/mq813_inne1.jpg);
+      background-size: cover;
+      background-position: left;
+    }
+
+    & .inneurzadzenia-box__image {
+      background-image: url(../img/inneurzadzenia/mq813_inne2.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 }
