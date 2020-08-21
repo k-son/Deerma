@@ -26,6 +26,22 @@
     }
   }
 
+  &--vc25 {
+
+    & .odkurzacze-box__image-box {
+      background-image: url(../img/odkurzacze/vc25_menu.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    & .odkurzacze-box__image {
+      background-image: url(../img/odkurzacze/VC25/0.jpg);
+      background-size: 140%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
   &--vc20 {
 
     & .odkurzacze-box__image-box {
@@ -37,6 +53,22 @@
     & .odkurzacze-box__image {
       background-image: url(../img/odkurzacze/vc20m.png);
       background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--vc01 {
+
+    & .odkurzacze-box__image-box {
+      background-image: url(../img/odkurzacze/vc01_menu.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    & .odkurzacze-box__image {
+      background-image: url(../img/odkurzacze/VC01/0.jpg);
+      background-size: 160%;
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -83,13 +115,11 @@
     }
 
     & .odkurzacze-box__image {
-      background-image: url(../img/odkurzacze/DX700.png);
+      background-image: url(../img/odkurzacze/dx700-B-W.png);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
     }
   }
-
-
 }
 
