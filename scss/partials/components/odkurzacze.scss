@@ -42,6 +42,22 @@
     }
   }
 
+  &--vc20plus {
+
+    & .odkurzacze-box__image-box {
+      background-image: url(../img/odkurzacze/vc20plus/vc20plus_menu.png);
+      background-size: cover;
+      background-position: 32% 50%;
+    }
+
+    & .odkurzacze-box__image {
+      background-image: url(../img/odkurzacze/vc20plus/0.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
   &--vc20 {
 
     & .odkurzacze-box__image-box {
@@ -100,6 +116,22 @@
 
     & .odkurzacze-box__image {
       background-image: url(../img/odkurzacze/TJ200_01_LS.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--dx800 {
+
+    & .odkurzacze-box__image-box {
+      background-image: url(../img/odkurzacze/dx800/1-1.png);
+      background-size: cover;
+      background-position: 30% 50%;
+    }
+
+    & .odkurzacze-box__image {
+      background-image: url(../img/odkurzacze/dx800/0.jpg);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;

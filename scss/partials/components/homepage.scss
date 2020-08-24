@@ -226,7 +226,7 @@
 
       &--odkurzacze:hover > .hover-box--odkurzacze {
         //height: 100%;  use it if you wish a 'press down' effect
-        height: 52.6rem;  // Change it when you add/remove item from navi
+        height: 68.6rem;  // Change it when you add/remove item from navi
         opacity: 1;
 
         @media only screen and (max-width: 730px) {
@@ -244,7 +244,7 @@
       }
 
       &--inne:hover > .hover-box--inne {
-        height: 37rem; // Change it when you add/remove item from navi
+        height: 55rem; // Change it when you add/remove item from navi
         opacity: 1;
 
         @media only screen and (max-width: 730px) {
