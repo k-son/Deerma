@@ -26,6 +26,38 @@
     }
   }
 
+  &--hx10 {
+
+    & .inneurzadzenia-box__image-box {
+      background-image: url(../img/inneurzadzenia/hx10/2.jpg);
+      background-size: cover;
+      background-position: 75% 50%;
+    }
+
+    & .inneurzadzenia-box__image {
+      background-image: url(../img/inneurzadzenia/hx10/0.jpg);
+      background-size: 120%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--nu05 {
+
+    & .inneurzadzenia-box__image-box {
+      background-image: url(../img/inneurzadzenia/nu05/Deerma_NU05_10_72.jpg);
+      background-size: cover;
+      background-position: left;
+    }
+
+    & .inneurzadzenia-box__image {
+      background-image: url(../img/inneurzadzenia/nu05/0.jpg);
+      background-size: 120%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
   &--tb500 {
 
     & .inneurzadzenia-box__image-box {
