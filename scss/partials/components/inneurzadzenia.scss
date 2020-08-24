@@ -73,6 +73,22 @@
       background-position: bottom;
     }
   }
+
+  &--tb900 {
+
+    & .inneurzadzenia-box__image-box {
+      background-image: url(../img/inneurzadzenia/tb900/1-1.jpg);
+      background-size: cover;
+      background-position: 10% 50%;
+    }
+
+    & .inneurzadzenia-box__image {
+      background-image: url(../img/inneurzadzenia/tb900/tb900_menu.png);
+      background-size: 110%;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }
   
   &--zq600 {
 
